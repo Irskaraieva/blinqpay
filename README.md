@@ -1,0 +1,2 @@
+# blinqpay
+Landing page
