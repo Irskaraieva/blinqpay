@@ -1,0 +1,390 @@
+/*  section-offers  */
+
+.section-offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr 1fr;
+    grid-template-areas:
+        'fir fir'
+        'second second'
+        'third third'
+        'resp resp';
+    background-color: white;
+    position: relative;
+    padding-top: 30px;
+}
+
+.card-header {
+    z-index: 2;
+}
+
+.first-offer {
+    grid-area: fir;
+}
+
+.easier,
+.banking,
+.safe {
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+.substrat-purple {
+    width: 83px;
+    top: 0;
+    left: 0;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+.credit-card {
+    color: #E23434;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.figure {
+    width: 50%;
+}
+
+.tablet {
+    transition: .3s;
+}
+
+.tablet:hover {
+    cursor: pointer;
+    scale: .9;
+}
+
+.purple {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #5C0E62;
+}
+
+
+
+.second-offer {
+    grid-area: second;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+
+.photo-triangles {
+    width: 600px;
+    max-width: 600px;
+    height: 300px;
+    position: relative;
+
+}
+
+.photo-triangles-1,
+.photo-triangles-2,
+.photo-triangles-3,
+.photo-triangles-4,
+.photo-triangles-5 {
+    width: 150px;
+    max-width: 150px;
+    position: absolute;
+    transition: .3s;
+}
+
+.photo-triangles-1:hover,
+.photo-triangles-2:hover,
+.photo-triangles-3:hover,
+.photo-triangles-4:hover,
+.photo-triangles-5:hover {
+    scale: .9;
+    cursor: pointer;
+}
+
+.photo-triangles-1 {
+    top: 0;
+    left: 155px;
+}
+
+.photo-triangles-2 {
+    top: 0;
+    left: 296px;
+}
+
+.photo-triangles-3 {
+    top: 77px;
+    left: 45px;
+}
+
+.photo-triangles-4 {
+    top: 147px;
+    left: 155px;
+}
+
+.photo-triangles-5 {
+    top: 150px;
+    left: 300px;
+}
+
+.third-offer {
+    gap: 5px;
+    grid-area: third;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1230px;
+    align-items: center;
+}
+
+.photo-rectangles img {
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.photo-rectangles img:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.photo-rectangles {
+    max-width: 600px;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.people-column {
+    width: 25%;
+    padding: 0 4px;
+}
+
+
+
+@media (max-width: 960px) {
+
+    .easier,
+    .banking,
+    .safe {
+        height: 240px;
+    }
+
+    .easier h2,
+    .banking h2,
+    .safe h2,
+    .purple {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .photo-triangles {
+        width: 400px;
+        max-width: 400px;
+        height: 240px;
+
+    }
+
+    .photo-triangles-1,
+    .photo-triangles-2,
+    .photo-triangles-3,
+    .photo-triangles-4,
+    .photo-triangles-5 {
+        width: 110px;
+        max-width: 110px;
+
+    }
+
+
+    .photo-triangles-1 {
+        top: 30px;
+        left: 155px;
+    }
+
+    .photo-triangles-2 {
+        top: 30px;
+        left: 260px;
+    }
+
+    .photo-triangles-3 {
+        top: 88px;
+        left: 70px;
+    }
+
+    .photo-triangles-4 {
+        top: 135px;
+        left: 156px;
+    }
+
+    .photo-triangles-5 {
+        top: 142px;
+        left: 265px;
+    }
+
+    .substrat-purple {
+        width: 65px;
+        height: 60px;
+        top: 15px;
+        left: 15px;
+    }
+
+    .photo-rectangles {
+        max-width: 420px;
+        max-height: 230px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .photo-rectangles {
+        max-width: 360px;
+        max-height: 230px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .section-offers {
+        grid-template-rows: .5fr .5fr .9fr 1fr;
+        margin-top: 50px;
+    }
+
+    .second-offer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .photo-triangles {
+        width: 100%;
+    }
+
+    .photo-triangles-1 {
+        top: 30px;
+        left: 27%;
+    }
+
+    .photo-triangles-2 {
+        top: 30px;
+        left: 57%;
+    }
+
+    .photo-triangles-3 {
+        top: 88px;
+        left: 0;
+    }
+
+    .photo-triangles-4 {
+        top: 140px;
+        left: 27%;
+    }
+
+    .photo-triangles-5 {
+        top: 148px;
+        left: 57%;
+    }
+
+    .third-offer {
+        height: 105%;
+        justify-content: flex-start;
+    }
+
+    .substrat-purple {
+        top: 0px;
+        left: 0px;
+    }
+
+    .photo-rectangles {
+        position: absolute;
+        bottom: 770px;
+        left: 0;
+        max-width: 140%;
+        height: 270px;
+        max-height: 270px;
+    }
+
+    .easier,
+    .banking,
+    .safe {
+        width: 100%;
+        height: 200px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-left: 25px;
+
+    }
+
+    .first-offer,
+    .third-offer {
+        flex-direction: column-reverse;
+    }
+
+
+    .figure,
+    .photo-triangles {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .photo-triangles-1,
+    .photo-triangles-2,
+    .photo-triangles-3,
+    .photo-triangles-4,
+    .photo-triangles-5 {
+        width: 100px;
+        max-width: 100px;
+
+    }
+
+    .photo-triangles-1 {
+        top: 30px;
+        left: 30%;
+    }
+
+    .photo-triangles-2 {
+        top: 30px;
+        left: 70%;
+    }
+
+    .photo-triangles-3 {
+        top: 88px;
+        left: 0;
+    }
+
+    .photo-triangles-4 {
+        top: 140px;
+        left: 30%;
+    }
+
+    .photo-triangles-5 {
+        top: 140px;
+        left: 70%;
+    }
+
+    .third-offer {
+        height: 100%;
+    }
+
+    .photo-rectangles {
+        height: 200px;
+        max-height: 200px;
+        bottom: 730px;
+    }
+
+    .section-offers {
+        grid-template-rows: .5fr .5fr .8fr 1fr;
+        margin-top: 0px;
+    }
+
+
+}

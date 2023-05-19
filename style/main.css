@@ -1,0 +1,29 @@
+@import './reset.css';
+@import './header.css';
+@import './section-services.css';
+@import './section-offers.css';
+@import './response.css';
+@import './footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700;800&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F7F3FA;
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+@media (max-width: 680px) {
+body { background-color: white;
+
+}
+}
