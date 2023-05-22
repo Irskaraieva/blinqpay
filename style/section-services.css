@@ -117,7 +117,7 @@
     text-overflow: ellipsis;
 }
 
-.lern-more {
+.learn-more {
     font-weight: 600;
     color: #5C0E62;
     width: 150px;
@@ -126,7 +126,7 @@
     transition: .3s;
 }
 
-.lern-more:hover {
+.learn-more:hover {
     gap: 16px;
 }
 
