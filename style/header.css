@@ -254,7 +254,7 @@
         align-items: center;
         padding: 80px 15px 35px;
         z-index: 10;
-        transition: .4s;
+        transition: .3s;
     }
 
     .nav {
@@ -269,11 +269,16 @@
         opacity: 1;
     }
 
-    .navbar.container.open .nav-menu {
-        top: 0px;
+    .navbar.container .nav-menu {
+        transition: .6s;
     }
 
-    .header-article {      
+    .navbar.container.open .nav-menu {
+        top: 0px;
+        transition: .3s;
+    }
+
+    .header-article {
         gap: 25px;
     }
 
@@ -289,11 +294,9 @@
     .image1 {
         max-height: 400px;
     }
-
 }
 
 @media (max-width: 990px) {
-
 
     .header-info {
         align-items: flex-start;
@@ -305,11 +308,9 @@
         display: none;
     }
 
-
     .header {
         background-image: url(./../photo/back-mobile.png);
         background-size: cover;
-
     }
 
     .header-article {
@@ -409,6 +410,7 @@
     .header-article {
         margin-top: 25px;
     }
+
     .header-article p {
         font-size: .9rem;
     }
@@ -422,7 +424,7 @@
     .image1 {
         max-height: 235px;
         bottom: -240px;
-        
+
     }
 
     .socials-mobile {

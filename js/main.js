@@ -1,8 +1,42 @@
 // burger menu open-close
 const burger = document.getElementById('burger');
+const productsNav = document.getElementById('productsNav');
+const developersNav = document.getElementById('developersNav');
+const companyNav = document.getElementById('companyNav');
+const pricingNav = document.getElementById('pricingNav');
+const supportNav = document.getElementById('supportNav');
+const signInNav = document.getElementById('signInNav');
 
 burger.addEventListener('click', () => {
-    document.querySelector('nav').classList.toggle('open')
+    document.querySelector('nav').classList.toggle('open');
+});
+
+const closeNav = () => {
+    document.querySelector('nav').classList.remove('open');
+}
+
+productsNav.addEventListener('click', () => {
+    closeNav();
+});
+
+developersNav.addEventListener('click', () => {
+    closeNav();
+});
+
+companyNav.addEventListener('click', () => {
+    closeNav();
+});
+
+pricingNav.addEventListener('click', () => {
+    closeNav();
+});
+
+supportNav.addEventListener('click', () => {
+    closeNav();
+});
+
+signInNav.addEventListener('click', () => {
+    closeNav();
 });
 
 let slideIndex = 1;

@@ -1,9 +1,12 @@
 .last-row {
     grid-area: resp;
-    background-image: url(./../photo/trapezium.png);
     height: 800px;
     position: relative;
+}
 
+.trapezium {
+    position: absolute;
+    top: 0;
 }
 
 .response {
@@ -34,7 +37,6 @@
     height: 600px;
     max-height: 600px;
     position: relative;
-
 }
 
 .slide-wrapper {
@@ -44,7 +46,6 @@
     align-items: center;
     text-align: center;
 }
-
 
 .slideshow-container {
     max-width: 960px;
@@ -123,7 +124,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
 }
 
 .customer-slide p {
@@ -138,9 +138,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
-
 
 .customer-slide h3 {
     font-size: 21px;
@@ -215,7 +213,6 @@
     z-index: 5;
 }
 
-
 .circle-4 {
     width: 70px;
     height: 70px;
@@ -229,7 +226,6 @@
     z-index: 5;
 }
 
-
 .circle-5 {
     width: 95px;
     height: 95px;
@@ -242,7 +238,6 @@
     transition: 0.3s;
 }
 
-
 .main-circle:hover,
 .circle-1:hover,
 .circle-2:hover,
@@ -252,7 +247,6 @@
     cursor: pointer;
     box-shadow: 0px 0px 3px 3px rgba(177, 207, 207, 0.86);
 }
-
 
 .vector-left {
     position: absolute;
@@ -268,7 +262,6 @@
     right: 0;
     bottom: 200px;
     opacity: 0.5;
-
 }
 
 .substrat-last {
@@ -289,7 +282,6 @@
     align-items: center;
     padding: 20px;
     z-index: 5;
-
 }
 
 .last-question-content {
@@ -305,7 +297,6 @@
     left: -5%;
     z-index: -1;
 }
-
 
 .question {
     font-size: 38px;
@@ -339,7 +330,7 @@
 @media (max-width: 1240px) {
 
     .last-row {
-        height: 660px;
+        height: 700px;
     }
 
     .customer-container {
@@ -381,14 +372,18 @@
     .last-row {
         height: 500px;
         padding-top: 0;
+        margin-top: 20px;
         background: rgb(101, 14, 107);
         background: linear-gradient(10deg, rgba(101, 14, 107, 1) 0%, rgba(77, 71, 156, 1) 100%);
     }
 
-
     .last-question {
         height: 160px;
         bottom: -80px;
+    }
+
+    .trapezium {
+       display: none;
     }
 
     .response-card {
@@ -412,8 +407,8 @@
     }
 
     .circle-3 {
-        top: 5%;
-        left: 50%;
+        top: 15%;
+        left: 40%;
         width: 60px;
         height: 60px;
     }
@@ -431,10 +426,7 @@
     .customer-slide {
         margin-bottom: 70px;
     }
-
 }
-
-
 
 @media (max-width: 960px) {
 
@@ -442,9 +434,7 @@
         width: 50%;
         padding: 0;
         height: 100px;
-
     }
-
 
     .card-header-response h2 {
         font-size: 1.6rem;
@@ -474,8 +464,6 @@
         top: 65%;
         left: 25%;
     }
-
-
 
     .substrat-last {
         width: 60px;
@@ -507,7 +495,6 @@
 @media (max-width: 680px) {
 
     .last-row {
-        margin-top: 55px;
         padding-top: 30px;
     }
 
@@ -567,7 +554,7 @@
 @media (max-width: 440px) {
 
     .last-row {
-        margin-top: 25px;
+        margin-top: 5px;
         padding-top: 20px;
     }
 

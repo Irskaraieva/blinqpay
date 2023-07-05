@@ -99,7 +99,7 @@
 
 .payments {
     height: 310px;
-    width: 400px;
+    width: 45%;
 }
 
 .purple-span {
@@ -184,7 +184,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 
     .section-services {
         height: 600px;
@@ -193,12 +193,12 @@
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
 
     .services {
-        padding-top: 70px;
+        padding-top: 50px;
         height: 450px;
-        width: 500px;
+        width: 50%;
     }
 
     .card {
@@ -217,10 +217,10 @@
 
     .payments {
         height: 240px;
-        width: 300px;
-        padding-right: 20px;
+        overflow: hidden;
+        padding-right: 5px;
         padding-top: 15px;
-        padding-left: 25px;
+        padding-left: 35px;
     }
 
     .payments h2 {
@@ -239,23 +239,28 @@
 
 }
 
-@media (max-width: 780px) {
+@media (max-width: 960px) {
 
+    .section-services {
+        height: 500px;
+        max-height: 500px;
+        margin-top: 20px;
+    }
 
     .services {
-        height: 400px;
-        width: 400px;
-        gap: 5px;
+        padding-top: 0px;
+        height: 300px;
+        width: 50%;
     }
 
     .card {
-        max-width: 180px;
+        max-width: 150px;
         height: 120px;
         padding: 8px 8px 8px 10px;
     }
 
     .services h2 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .card p {
@@ -263,16 +268,19 @@
         line-height: 16px;
     }
 
+    .col-1 {
+        padding-top: 20px;
+    }
 
-
+    .col-2 {
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 680px) {
 
-
     .section-services {
-        margin-top: 400px;
-        height: 500px;
+        margin-top: 380px;
         background-color: white;
     }
 
@@ -284,15 +292,26 @@
         display: none;
     }
 
-
     .services-column {
         flex-direction: column-reverse;
     }
 
     .services {
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 60px;
+        height: 330px;
+        padding-top: 30px;
+    }
 
+    .card {
+        max-width: 170px;
+        padding: 8px 8px 8px 10px;
+    }
+
+    .col-1,
+    .col-2 {
+        padding: 0;
     }
 
     .payments {
@@ -306,11 +325,7 @@
 
     .substrat-purple-1 {
         display: block;
-
     }
-
-
-
 }
 
 @media (max-width: 440px) {
@@ -331,12 +346,9 @@
         padding: 30px 0;
         height: 360px;
     }
-    .col-1,
-    .col-2 {
-        padding: 0;
-    }
+
 .card-header h2 {
-    font-size: 1rem;
+    font-size: .8rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -345,10 +357,11 @@
 }
 
 .card {
-    max-width: 140px;
-    height: 140px;
+    max-width: 135px;
+    height: 130px;
 }
 .card p {
+    font-size: .8rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
