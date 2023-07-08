@@ -3,7 +3,6 @@
 .header {
     padding-top: 30px;
     position: relative;
-
 }
 
 .navbar {
@@ -11,7 +10,19 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
+    animation: navbarAppire .6s ease-in;
+}
 
+@keyframes navbarAppire {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        height: 50px;
+        opacity: 1;
+    }
 }
 
 .nav-menu {
@@ -173,20 +184,34 @@
     background-color: #FFBC51;
 }
 
-.header-images {
-    position: relative;
-    width: 700px;
-    height: 100%;
-    display: block;
-}
-
 .image1 {
     position: absolute;
     bottom: -34px;
     right: 0;
     max-height: 580px;
+    height: 100%;
+    animation: mymoveimg1 .6s ease-out;
 }
 
+@keyframes mymoveimg1 {
+    0% {
+        height: 0px;
+        opacity: 0;
+        right: 300px;
+    }
+
+    20% {
+        height: 40%;
+        opacity: .4;
+        right: 250px;
+    }
+
+    100% {
+        height: 100%;
+        opacity: 1;
+        right: 0;
+    }
+}
 
 .burger {
     display: none;
@@ -225,14 +250,63 @@
     display: none;
 }
 
-@media (max-width: 1120px) {
+
+.socials-mobile img {
+    width: 40px;
+    opacity: .8;
+    transition: .3s;
+}
+
+.socials-mobile img:hover {
+    opacity: 1;
+}
+
+
+@media (max-width: 1400px) {
 
     .header {
         padding-top: 10px;
     }
 
     .header-info {
-        height: 476px;
+        height: 460px;
+        max-height: 460px;
+    }
+
+    .vector-1,
+    .vector-2 {
+        display: none;
+    }
+
+    .header {
+        background-image: url(./../photo/back-mobile.png);
+        background-size: cover;
+    }
+
+    .header-article {
+        gap: 25px;
+    }
+
+    .article-header {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+
+    .header-article p {
+        font-size: 1rem;
+    }
+
+    .image1 {
+        max-height: 450px;
+        bottom: -39px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .header-info {
+        align-items: flex-start;
+        height: 360px;
     }
 
     .burger {
@@ -279,41 +353,6 @@
     }
 
     .header-article {
-        gap: 25px;
-    }
-
-    .article-header {
-        font-size: 2.6rem;
-        line-height: 3.2rem;
-    }
-
-    .header-article p {
-        font-size: 1rem;
-    }
-
-    .image1 {
-        max-height: 400px;
-    }
-}
-
-@media (max-width: 990px) {
-
-    .header-info {
-        align-items: flex-start;
-        height: 360px;
-    }
-
-    .vector-1,
-    .vector-2 {
-        display: none;
-    }
-
-    .header {
-        background-image: url(./../photo/back-mobile.png);
-        background-size: cover;
-    }
-
-    .header-article {
         margin-top: 50px;
         max-width: 320px;
     }
@@ -348,10 +387,6 @@
         margin: 0 auto;
         left: 0;
         right: 0;
-    }
-
-    .socials-mobile img {
-        width: 40px;
     }
 
     .socials-mobile {

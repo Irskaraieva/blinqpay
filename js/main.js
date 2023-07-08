@@ -56,8 +56,8 @@ function currentSlide(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");    
-    
+    let dots = document.getElementsByClassName("dot");
+
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
 
@@ -76,7 +76,7 @@ function showSlides(n) {
 
 // footer lists
 
-const servises = document.getElementById('servises');
+const services = document.getElementById('services');
 const products = document.getElementById('products');
 const company = document.getElementById('company');
 
@@ -84,9 +84,9 @@ const showServ = document.getElementById('servArrowDown');
 const showProd = document.getElementById('prodArrowDown');
 const showComp = document.getElementById('compArrowDown');
 
-// show servises
+// show services
 const showServList = function () {
-    servises.classList.toggle('visible-list');
+    services.classList.toggle('visible-list');
     showServ.classList.toggle('arrow-up');
 }
 
@@ -96,7 +96,7 @@ showServ.addEventListener('click', (e) => {
 })
 
 document.documentElement.addEventListener('click', () => {
-    if (servises.classList.contains('visible-list')) {
+    if (services.classList.contains('visible-list')) {
         showServList();
     }
 })
@@ -133,6 +133,41 @@ document.documentElement.addEventListener('click', () => {
     if (company.classList.contains('visible-list')) {
         showCompList();
     }
+})
+
+// animation photo-triangles with scroll
+
+const photoTriangle1 = document.querySelector('.photo-triangles-1');
+const photoTriangle2 = document.querySelector('.photo-triangles-2');
+const photoTriangle3 = document.querySelector('.photo-triangles-3');
+const photoTriangle4 = document.querySelector('.photo-triangles-4');
+const photoTriangle5 = document.querySelector('.photo-triangles-5');
+
+const arrow1 = document.getElementById('learn-more1');
+const arrow2 = document.getElementById('learn-more2');
+const arrow3 = document.getElementById('learn-more3');
+const arrow4 = document.getElementById('learn-more4');
+
+
+function checkElementInView(element) {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementTop - windowHeight <= 0) {
+        element.classList.add('appear');
+    }
+};
+
+window.addEventListener('scroll', () => {
+    checkElementInView(photoTriangle1);
+    checkElementInView(photoTriangle2);
+    checkElementInView(photoTriangle3);
+    checkElementInView(photoTriangle4);
+    checkElementInView(photoTriangle5);
+    checkElementInView(arrow1);
+    checkElementInView(arrow2);
+    checkElementInView(arrow3);
+    checkElementInView(arrow4);
 })
 
 // Back to Top

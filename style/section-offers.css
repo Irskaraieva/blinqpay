@@ -80,6 +80,11 @@
     position: relative;
 }
 
+@keyframes phototrianglesadd {
+    from { scale: 0; }
+    to { scale: 1; } 
+}
+
 .photo-triangles-1,
 .photo-triangles-2,
 .photo-triangles-3,
@@ -88,7 +93,11 @@
     width: 150px;
     max-width: 150px;
     position: absolute;
-    transition: .3s;
+    transition: .3s;    
+}
+
+.appear {
+    animation: phototrianglesadd 1s;
 }
 
 .photo-triangles-1:hover,
@@ -99,6 +108,7 @@
     scale: .9;
     cursor: pointer;
 }
+
 
 .photo-triangles-1 {
     top: 0;
