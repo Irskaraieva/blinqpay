@@ -372,7 +372,7 @@
     .last-row {
         height: 500px;
         padding-top: 0;
-        margin-top: 20px;
+        margin-top: 10px;
         background: rgb(101, 14, 107);
         background: linear-gradient(10deg, rgba(101, 14, 107, 1) 0%, rgba(77, 71, 156, 1) 100%);
     }
@@ -495,7 +495,7 @@
 @media (max-width: 680px) {
 
     .last-row {
-        padding-top: 30px;
+        padding-top: 0px;
     }
 
     .response {

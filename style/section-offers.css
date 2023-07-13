@@ -71,6 +71,7 @@
     display: flex;
     margin: 0 auto;
     max-width: 1230px;
+    height: 320px;
 }
 
 .photo-triangles {
@@ -138,7 +139,7 @@
 .third-offer {
     gap: 5px;
     grid-area: third;
-    height: 320px;
+    height: 340px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -241,6 +242,13 @@
         max-height: 230px;
     }
 
+    .third-offer  {
+        height: 280px;      
+    }
+    
+    .second-offer {
+        height: 260px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -260,7 +268,9 @@
 
     .second-offer {
         flex-direction: column;
+        justify-content: flex-start;
         gap: 30px;
+        height: 480px;
     }
 
     .photo-triangles {
@@ -295,7 +305,7 @@
     .third-offer {
         height: 520px;
         justify-content: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .substrat-purple {
@@ -370,6 +380,7 @@
 
     .third-offer {
         height: 420px;
+        gap: 20px
     }
 
     .photo-rectangles {

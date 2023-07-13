@@ -23,11 +23,11 @@ body {
 }
 
 @media (max-width: 680px) {
-body {
-    background-color: white;
-}
-.container {
-    padding: 0 20px;
-}
+    body {
+        background-color: white;
+    }
+    .container {
+        padding: 0 20px;
+    }
  
 }

@@ -366,15 +366,16 @@
         max-height: 350px;
         bottom: -30px;
     }
-
-    @media (max-width: 800px) {
-        .image1 {
-            max-height: 295px;
-            bottom: -26px;
-        }
-    }
-
 }
+
+@media (max-width: 800px) {
+    .image1 {
+        max-height: 275px;
+        bottom: -24px;
+    }
+}
+
+
 
 @media (max-width: 680px) {
 
@@ -383,7 +384,7 @@
     }
 
     .image1 {
-        bottom: -330px;
+        bottom: -300px;
         margin: 0 auto;
         left: 0;
         right: 0;
