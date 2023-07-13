@@ -142,6 +142,14 @@ const photoTriangle2 = document.querySelector('.photo-triangles-2');
 const photoTriangle3 = document.querySelector('.photo-triangles-3');
 const photoTriangle4 = document.querySelector('.photo-triangles-4');
 const photoTriangle5 = document.querySelector('.photo-triangles-5');
+const photoCircle1 = document.querySelector('.circle-1');
+const photoCircle2 = document.querySelector('.circle-2');
+const photoCircle3 = document.querySelector('.circle-3');
+const photoCircle4 = document.querySelector('.circle-4');
+const photoCircle5 = document.querySelector('.circle-5');
+const photoCircleMain = document.querySelector('.main-circle');
+
+const question = document.querySelector('.question');
 
 const arrow1 = document.getElementById('learn-more1');
 const arrow2 = document.getElementById('learn-more2');
@@ -168,6 +176,14 @@ window.addEventListener('scroll', () => {
     checkElementInView(arrow2);
     checkElementInView(arrow3);
     checkElementInView(arrow4);
+    checkElementInView(photoCircle1);
+    checkElementInView(photoCircle2);
+    checkElementInView(photoCircle3);
+    checkElementInView(photoCircle4);
+    checkElementInView(photoCircle5);
+    checkElementInView(photoCircleMain);
+    checkElementInView(question);
+    
 })
 
 // Back to Top
