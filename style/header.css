@@ -190,7 +190,7 @@
     right: 0;
     max-height: 580px;
     height: 100%;
-    animation: mymoveimg1 .6s ease-out;
+    animation: mymoveimg1 .5s ease-out;
 }
 
 @keyframes mymoveimg1 {
