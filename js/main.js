@@ -147,7 +147,6 @@ const photoCircle2 = document.querySelector('.circle-2');
 const photoCircle3 = document.querySelector('.circle-3');
 const photoCircle4 = document.querySelector('.circle-4');
 const photoCircle5 = document.querySelector('.circle-5');
-const photoCircleMain = document.querySelector('.main-circle');
 
 const question = document.querySelector('.question');
 
@@ -181,7 +180,6 @@ window.addEventListener('scroll', () => {
     checkElementInView(photoCircle3);
     checkElementInView(photoCircle4);
     checkElementInView(photoCircle5);
-    checkElementInView(photoCircleMain);
     checkElementInView(question);
     
 })
