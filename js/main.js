@@ -9,7 +9,7 @@ const signInNav = document.getElementById('signInNav');
 
 burger.addEventListener('click', () => {
     document.querySelector('nav').classList.toggle('open');
-    document.body.classList.add('no-scroll');
+    document.body.classList.toggle('no-scroll');
 });
 
 const closeNav = () => {
