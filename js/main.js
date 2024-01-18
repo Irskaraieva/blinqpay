@@ -9,10 +9,12 @@ const signInNav = document.getElementById('signInNav');
 
 burger.addEventListener('click', () => {
     document.querySelector('nav').classList.toggle('open');
+    document.body.classList.add('no-scroll');
 });
 
 const closeNav = () => {
     document.querySelector('nav').classList.remove('open');
+    document.body.classList.remove('no-scroll');
 }
 
 productsNav.addEventListener('click', () => {
@@ -154,6 +156,8 @@ const arrow1 = document.getElementById('learn-more1');
 const arrow2 = document.getElementById('learn-more2');
 const arrow3 = document.getElementById('learn-more3');
 const arrow4 = document.getElementById('learn-more4');
+const tabletApear = document.querySelector('.tablet');
+const photoRec = document.querySelector('.photo-rectangles');
 
 
 function checkElementInView(element) {
