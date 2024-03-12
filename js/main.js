@@ -41,19 +41,42 @@ signInNav.addEventListener('click', () => {
     closeNav();
 });
 
+// Slider
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+// Touch events for swipe support
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.getElementById('slide-wrapper').addEventListener('touchstart', function(event) {
+    touchStartX = event.touches[0].clientX;
+});
+
+document.getElementById('slide-wrapper').addEventListener('touchend', function(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 40;
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (swipeDistance > swipeThreshold) {
+        plusSlides(-1);
+    } else if (swipeDistance < -swipeThreshold) {
+        plusSlides(1);
+    }
+}
 
 function showSlides(n) {
     let i;
