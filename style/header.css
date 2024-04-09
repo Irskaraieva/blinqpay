@@ -5,34 +5,23 @@
     position: relative;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-}
-
-@keyframes brandAppire {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 @keyframes headerdAppire {
-    from {
-        opacity: 0;
-        transform: scale(0);
-     
+    from {   
+        transform: translate(0px, -60px);
     }
 
     to {
-        opacity: 1;
-        transform: scale(1);
-        
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes blockAppire {
+    from {   
+        transform: translate(0px, 60px);
+    }
+
+    to {
+        transform: translate(0px, 0px);
     }
 }
 
@@ -46,6 +35,18 @@
         width: 200px;
         opacity: 1;
     }
+}
+
+.block-appire {
+    animation: blockAppire .6s ease-in;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    animation: headerdAppire .7s ease-in;
 }
 
 .nav-menu {
@@ -63,7 +64,6 @@
 
 .brand {
     display: inline-flex;
-    animation: brandAppire .6s ease-in;
 }
 
 .logo {
@@ -201,7 +201,7 @@ h1 {
     overflow: hidden;
     border-right: 2px solid inherit;
     white-space: nowrap;
-    animation: typing 1.1s steps(40, end) ;
+    animation: typing .7s steps(40, end) ;
   }
 
 .header-article p {
@@ -218,7 +218,7 @@ h1 {
     background-color: #798AC9;
     border-radius: 5px;
     transition: .3s;
-    animation: btnAppire .8s ease-in;
+    animation: btnAppire .7s ease-in;
 }
 
 .start-now:hover {
@@ -231,7 +231,7 @@ h1 {
     right: 0;
     max-height: 580px;
     height: 100%;
-    animation: mymoveimg1 .8s ease-out;
+    animation: mymoveimg1 .7s ease-out;
     transition: transform 0.4s ease-out;
 }
 
@@ -381,6 +381,10 @@ h1 {
         opacity: 1;
     }
 
+    .navbar {
+        animation: none;
+    }
+
     .navbar.container .nav-menu {
         transition: .6s;
     }
@@ -412,8 +416,6 @@ h1 {
         bottom: -24px;
     }
 }
-
-
 
 @media (max-width: 680px) {
 
@@ -492,13 +494,11 @@ h1 {
     .start-now {
         width: 180px;
         height: 40px;
-
     }
 
     .image1 {
         max-height: 235px;
         bottom: -240px;
-
     }
 
     .socials-mobile {
@@ -507,6 +507,5 @@ h1 {
         height: 40px;
         padding: 0 20px;
         margin-bottom: 10px;
-
     }
 }

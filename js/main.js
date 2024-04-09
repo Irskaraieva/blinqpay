@@ -217,3 +217,14 @@ window.addEventListener('scroll', () => {
 backToTopButton.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });*/
+
+document.addEventListener('scroll', () => {
+    const blocks = document.querySelectorAll('.block');
+    blocks.forEach(block => {
+        const blockTop = block.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (blockTop < windowHeight) {
+            block.classList.add('block-appire');
+        }
+    });
+});
