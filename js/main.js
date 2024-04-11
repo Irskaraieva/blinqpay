@@ -220,11 +220,19 @@ backToTopButton.addEventListener('click', () => {
 
 document.addEventListener('scroll', () => {
     const blocks = document.querySelectorAll('.block');
+    const blockLeft = document.querySelectorAll('.block-left');
     blocks.forEach(block => {
         const blockTop = block.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
         if (blockTop < windowHeight) {
-            block.classList.add('block-appire');
+            block.classList.add('block-appear');
+        }
+    });
+    blockLeft.forEach(block => {
+        const blockTop = block.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (blockTop < windowHeight) {
+            block.classList.add('block-left-appear');
         }
     });
 });

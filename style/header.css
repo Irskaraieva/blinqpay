@@ -5,7 +5,7 @@
     position: relative;
 }
 
-@keyframes headerdAppire {
+@keyframes headerdAppear {
     from {   
         transform: translate(0px, -60px);
     }
@@ -15,7 +15,7 @@
     }
 }
 
-@keyframes blockAppire {
+@keyframes blockAppear {
     from {   
         transform: translate(0px, 60px);
     }
@@ -25,7 +25,7 @@
     }
 }
 
-@keyframes btnAppire {
+@keyframes btnAppear {
     from {
         width: 0;
         opacity: 0;
@@ -37,8 +37,8 @@
     }
 }
 
-.block-appire {
-    animation: blockAppire .6s ease-in;
+.block-appear {
+    animation: blockAppear .6s ease-in;
 }
 
 .navbar {
@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    animation: headerdAppire .7s ease-in;
+    animation: headerdAppear .7s ease-in;
 }
 
 .nav-menu {
@@ -218,7 +218,7 @@ h1 {
     background-color: #798AC9;
     border-radius: 5px;
     transition: .3s;
-    animation: btnAppire .7s ease-in;
+    animation: btnAppear .7s ease-in;
 }
 
 .start-now:hover {

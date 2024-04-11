@@ -35,3 +35,17 @@ body {
     }
  
 }
+
+.block-left-appear {
+    animation: blockLeftAppear .7s ease-in;
+}
+
+@keyframes blockLeftAppear {
+    from {   
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
