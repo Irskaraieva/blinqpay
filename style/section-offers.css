@@ -258,7 +258,7 @@
 
     .section-offers {
         grid-template-rows: .5fr .5fr .9fr .9fr;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .second-offer {
@@ -385,8 +385,6 @@
 
     .section-offers {
         grid-template-rows: .5fr .5fr .8fr .8fr;
-        margin-top: 0px;
+        margin-top: 50px;
     }
-
-
 }
